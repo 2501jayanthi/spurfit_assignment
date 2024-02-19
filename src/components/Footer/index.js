@@ -1,43 +1,43 @@
-import { FaLocationDot } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { FaRegCopyright } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+import { IoIosMail } from "react-icons/io";
 
 import "./index.css";
 
 const Footer = () => (
-  <footer className="footer-container">
-    <div className="footer-logo-title">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUHHhmODkp6LXZiHf1FRJNpV3ukrlxjHgNMQTNQ46WNCTL5RV0ACYYWt_HrbfX08YLms&usqp=CAU"
-        alt="website logo"
-        className="footer-website-logo"
-      />
-      <p className="footer-title">ahead</p>
-    </div>
-    <div className="location-email-main-container">
-      <div className="icon-text-container">
-        <div className="icon-container">
-          <FaLocationDot />
-        </div>
-        <p className="location-email-text">Augustrase 26, 10117 Berlin</p>
+  <>
+    <hr className="horizontal-line" />
+    <footer className="footer-section-container">
+      <div className="footer-logo-name-container">
+        <img
+          className="app-logo"
+          src="https://res.cloudinary.com/dvmkmx7o3/image/upload/v1708144025/434x0w_an99ot.webp"
+          alt="app logo"
+        />
+        <p>ahead</p>
       </div>
-      <div className="icon-text-container">
-        <div className="icon-container">
-          <MdEmail />
+      <div className="ahead-app-contact-info-container">
+        <div className="location-container">
+          <IoLocationSharp size={25} color="#fff" className="location" />
+          <p>AugustsraBe 26, 10117 Berlin</p>
         </div>
-        <p className="location-email-text">hi@ahead-app.com</p>
+        <div className="email-container">
+          <IoIosMail size={25} color="#fff" className="email" />
+          <p>hi@ahead-app.com</p>
+        </div>
       </div>
-    </div>
-    <img
-      src="https://brandeps.com/logo-download/D/Download-on-the-App-Store-logo-vector-01.svg"
-      className="footer-app-store-image"
-      alt="app store"
-    />
-    <p className="copy-right">
-      <FaRegCopyright size={10} className="copyright-icon" />
-      2022 Ahead app. All rights reserved.
-    </p>
-  </footer>
+      <div className="app-donwload-container">
+        <img
+          className="apple-logo-img"
+          alt="apple logo"
+          src="https://res.cloudinary.com/dvmkmx7o3/image/upload/v1708137225/1685901641apple-icon-png_j81cm0.webp"
+        />
+        <div>
+          <p>Donwload on the</p>
+          <p>APP STORE</p>
+        </div>
+      </div>
+    </footer>
+  </>
 );
 
 export default Footer;
